@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:8587
+@adminToken = replace-with-an-admin-jwt
+
+### Submit a volunteer application (creates a database row)
+POST {{baseUrl}}/api/volunteers
+Content-Type: application/json
+
+{
+  "name": "Example Volunteer",
+  "email": "example.volunteer@example.com",
+  "role": "Research & Education",
+  "message": "I would like to help with educational materials."
+}
+
+### List applications (requires an Admin JWT)
+GET {{baseUrl}}/api/volunteers
+Authorization: Bearer {{adminToken}}
+Accept: application/json
