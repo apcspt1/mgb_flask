@@ -228,6 +228,11 @@ Production runs on **MySQL (AWS RDS)**; local development runs on SQLite. Data m
 between them over the admin-only `/api/export/*` endpoints, so **both sides must be
 running the same code** before you migrate.
 
+To create only the volunteer applications table after deploying the backend, run
+`python scripts/create_volunteer_table.py` from the project root on the server. It
+uses the configured database connection and is safe to rerun. Do not use `db_init.py`
+for this change; it drops all tables before rebuilding the schema.
+
 Critically: step 5 runs `db_init.py` on production, which does a `drop_all()`. Anything
 not covered by the export/import endpoints is destroyed there and never comes back. The
 scripts now reconcile every table against `/api/export/counts` and exit non-zero on any
