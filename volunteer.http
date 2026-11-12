@@ -1,4 +1,4 @@
-@baseUrl = http://localhost:8587
+@baseUrl = http://localhost:8555
 @adminToken = replace-with-an-admin-jwt
 
 ### Submit a volunteer application (creates a database row)
