@@ -6,7 +6,7 @@ services:
     env_file:
       - .env # This file is optional; defaults will be used if it does not exist
     ports:
-      - "8555:8555"
+      - "8470:8470"
     volumes:
       - ./instance:/app/instance
     restart: unless-stopped
@@ -15,7 +15,7 @@ services:
     image: socket_open
     build: ./socket
     ports:
-      - "8500:8500"
+      - "8471:8471"
     restart: unless-stopped
 
   code_runner:

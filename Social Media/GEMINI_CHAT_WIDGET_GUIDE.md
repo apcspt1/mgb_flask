@@ -244,7 +244,7 @@ Add more suggestion buttons:
 ### **AI doesn't respond:**
 - ✅ Make sure you're logged in
 - ✅ Check Gemini API key is configured
-- ✅ Backend must be running (port 8555)
+- ✅ Backend must be running (port 8470)
 
 ### **"Auth error" message:**
 - ✅ Login first with testuser/123456
@@ -345,4 +345,3 @@ You now have a **fully functional AI chat assistant** that:
 **Your AI chat assistant is ready! 🤖✨**
 
 Just refresh your browser and you'll see the purple button in the corner! Click it and start chatting! 🎉
-

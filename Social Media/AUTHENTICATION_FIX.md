@@ -79,7 +79,7 @@ Now the "Create Post" button should work! The login warning should disappear.
 1. Open browser console (F12)
 2. Look for errors
 3. Check if you see: `Auth check failed`
-4. Make sure `javaURI` points to `http://localhost:8555`
+4. Make sure `javaURI` points to `http://localhost:8470`
 
 ### "Getting CORS errors"
 
@@ -98,7 +98,7 @@ Now the "Create Post" button should work! The login warning should disappear.
 
 ## 🚀 Complete Setup Checklist
 
-- ✅ Backend running (port 8555)
+- ✅ Backend running (port 8470)
 - ✅ Social Media API 401 fixed (viewing is public)
 - ✅ Login 401 fixed (test user created)
 - ✅ Authentication detection fixed (uses `/api/id`)
@@ -128,4 +128,3 @@ Now the "Create Post" button should work! The login warning should disappear.
 5. Share your learning journey!
 
 The authentication detection is now working correctly! 🎊
-
